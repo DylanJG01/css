@@ -1,26 +1,33 @@
-.container {
-  position: relative;
-  width: 200px;
-  height: 400px;
-  margin: 100px auto;
-  overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
 }
-  
 .square {
-  width: 50px;
-  height: 50px;
-  background-color: red;
   position: absolute;
-  bottom: 50%;
+  height: 100px;
+  width: 100px;
+}
+.center-square {
+  position: absolute;
+  background-color: red;
+  top: 50%;
   left: 50%;
-  animation: bounce 2s infinite alternate;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes bounce {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    bottom: 350px; /* Adjust this value to control the bounce height */
-  }
+.square1 {
+  background-color: green;
+  transform: translate(-50%, -50%);
+}
+.square2 {
+  background-color: green;
+  transform: translate(50%, -50%);
+}
+.square3 {
+  background-color: green;
+  transform: translate(-50%, 50%);
+}
+.square4 {
+  background-color: green;
+  transform: translate(50%, 50%);
 }
